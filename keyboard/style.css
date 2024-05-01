@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+ 
+}
+
+body {
+  background-color: #58aac65a;
+  font-family: 'Muli', sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.container {
+  border: 2px solid black;
+  border-radius: 16px;
+  padding: 1.5em 2rem;
+  margin: auto;
+  background-color: rgb(211,211,211);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.row {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.row-1 > .key {
+  width: 44px;
+}
+.row-3, .row-5 {
+  position: relative;
+}
+.key {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50px;
+  height: 40px;
+  background-color:rgb(56, 56, 56);
+  color: #fff;
+  margin: .2em;
+  margin-bottom: .2em;
+  border-radius: 8px;
+}
+
+.space {
+  width: calc(250px + 1.6em);
+}
+.shift {
+  width: calc(100px + 1.1em);
+}
+.enter {
+  width: calc(88px);
+}
+.esc {
+  width: 50px !important;
+}
+.backspace {
+  width: 73px !important;
+  font-size: 0.8em;
+}
+.plus, .num-enter {
+  height: calc(80px + 0.4em) !important;
+  position: absolute;
+  right: 0;
+}
+.plus {
+  bottom: -46px;
+}
+.num-enter {
+  height: calc(80px + 0.8em) !important;
+  font-size: 0.8em;
+  bottom: -49px;
+}
+.num {
+  width: 40px !important;
+}
+.numLock {
+  font-size: 0.7em;
+  width: 43px !important;
+}
+.tab {
+  width: 72px;
+}
+.caplock {
+  width: 90px;
+}
+.zero {
+  width: calc(80px + 0.4em);
+}
+.pipe {
+  width: 55px;
+}
+.ctrl, .fn {
+  width: 56px;
+}
+.left, .right {
+  width: 52px;
+}
+
+.test {
+  background-color: #46d476 !important;
+  color: #000 !important;
+  animation: keyPress .5s ease;
+}
+#upDown {
+  display: flex;
+  flex-direction: column;
+  /*background-color: #fff; */
+  color: #fff;
+  font-size: 0.7em;
+  text-align: center;
+  height: 50px;
+  width: 58px;
+  margin-top: 0.3em !important;
+}
+#upDown > div {
+  background-color: rgb(56, 56, 56);
+  margin: 0.15em;
+  padding: 2.5px
+}
+#upDown > div.top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+#upDown > div.bottom {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@keyframes keyPress {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

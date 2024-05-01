@@ -1,0 +1,72 @@
+@import url('https://fonts.cdnfonts.com/css/ds-digital');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: "DS-Digital";
+    font-size: 10px;
+    min-height: 100vh;
+}
+body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.timer-box {
+    background-color: #d8d8d8;
+    padding: 1rem;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.timer-box p {
+    font-size: 5em;
+    font-weight: bold;
+    padding: 10px;
+    width: 4em;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+.timer {
+    font-size: 4rem;
+    font-weight: lighter;
+}
+.btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-svg {
+    width: 4rem;
+}
+#btn-play{
+    display: block;
+}
+#btn-pause{
+    display: none;
+}
+/*
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+*/

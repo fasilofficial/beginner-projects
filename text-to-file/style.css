@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+div.container {
+    width: 65%;
+    margin: 0 auto;
+    background-color: hsla(180, 3%, 26%, 0.973);
+    color: rgb(231, 231, 231);
+    padding: 10px 20px;
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+div.header {
+    margin-bottom: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input#filename {
+    margin-bottom: 10px;
+}
+input#filename:focus + textarea:focus {
+    outline: none;
+    border: none;
+}
+textarea:focus {
+    outline: none;
+    border: none;
+}
+div.main {
+    font-family: arial;
+    margin-bottom: 30px;
+}
+textarea {
+    padding: 5px;
+}
+div.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 5px 8px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+button#save:hover {
+    background-color: hsla(138, 88%, 36%, 0.966);
+}
+button#reset:hover {
+    background-color: hsla(0, 65%, 52%, 0.774);
+}

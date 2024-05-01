@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script.js" defer></script>
+        <title>English Dictionary</title>
+    </head>
+    <body class="w-full flex justify-center bg-gray-200">
+        <div class="lg:w-[50%] md:w-[70%] w-[80%] mt-20 py-10 lg:px-20 md:px-15 px-10 shadow-xl bg-white rounded-sm">
+            <div class="w-full flex items-center bg-white rounded-md border-2 border-gray-300 p-1">
+                <input placeholder="Search for a word" type="text" class="w-[95%] py-1 pl-3 focus:outline-none" id="inp-word">
+                <button class="w-[5%] hover:scale-105 text-gray-500 hover:text-gray-600" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </body>
+</html>

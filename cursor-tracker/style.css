@@ -1,0 +1,3 @@
+.bee {position: fixed;transform: translate(-50%, -50%);width: 100px;pointer-events: none;transition: all .15s;height: 100px;}
+img {width: 100%;}
+body {width: 100vw;height: 100vh;overflow: hidden;background-image: url("https://img.freepik.com/free-vector/empty-sky-nature-scene-park_1308-50041.jpg?w=1060&t=st=1668682420~exp=1668683020~hmac=2a34f00932f26ace284c624a0ba4cb735bcc08ad7fffc9add6e90bd3b783b896");background-size: cover;background-repeat: no-repeat;}

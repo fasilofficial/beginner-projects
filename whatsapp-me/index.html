@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.bd205f1a9b31a73c985b005326ddbb6e?rik=AdKwVY1xulrKRg&riu=http%3a%2f%2fwiki.miranda-ng.org%2fimages%2farchive%2fc%2fc0%2f20140919163518!WhatsApp_logo.png&ehk=iN0AAeWrJ04MmQEFVcoOVvPGcEXsESxs3TCScPZ1OpA%3d&risl=&pid=ImgRaw&r=0" type="image/png">
+    <meta property="og:image" content="https://th.bing.com/th/id/R.bd205f1a9b31a73c985b005326ddbb6e?rik=AdKwVY1xulrKRg&riu=http%3a%2f%2fwiki.miranda-ng.org%2fimages%2farchive%2fc%2fc0%2f20140919163518!WhatsApp_logo.png&ehk=iN0AAeWrJ04MmQEFVcoOVvPGcEXsESxs3TCScPZ1OpA%3d&risl=&pid=ImgRaw&r=0" />
+    <meta name="description" content="Chat with people on Whatsapp without saving their number on your contacts">
+    <script src="https://kit.fontawesome.com/b0573e5e62.js" crossorigin="anonymous"></script>
+    <title>wa.me | Fasil</title>
+    <style>
+        body {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .container {
+            width: 90%;
+            max-width: 300px;
+            margin: 0 auto;
+            display: grid;
+            place-items: center;
+            gap: 10px;
+            padding: 30px;
+            padding-bottom: 60px;
+            background-color: rgb(18, 140, 126);
+            color: #fff;
+            border-radius: 8px;
+        }
+        .input-container {
+            background-color: #fff;
+            padding: 5px 10px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 4px;
+            font-size: .9rem;
+        }
+        i.fa-times, input::placeholder {
+            color: #777;
+        }
+        i.fa-times:hover {
+            color: #333;
+            cursor: pointer;
+        }
+        button#button {
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        button#button:hover {
+            transform: scale(1.03);
+            background-color: #fff;
+        }
+
+        input {
+            border: none;
+            outline: none;
+        }
+        input:focus {
+            background-color: #fff;
+        }
+
+        @media all and (max-width: 375px) {
+            .container {
+                padding: 10px 5px;
+            }
+        }
+        @media all and (max-width: 240px) {
+            .container {
+                padding: 10px 5px;
+            }
+            .input-container {
+                font-size: 0.7rem;
+                margin-bottom: 10px;
+            }
+            button#button {
+                padding: 2px 5px;
+                font-size: 0.7em;
+            }
+        }
+        @media all and (max-width: 215px) {
+            .container {
+                padding: 10px 5px;
+            }
+            .input-container {
+                font-size: 0.6rem;
+                margin-bottom: 8px;
+                padding: 2px 5px;
+            }
+            input {
+                width: 80%;
+            }
+        }
+        @media all and (max-width: 165px) {
+            .container {
+                padding: 10px 5px;
+                font-size: 0.7em;
+            }
+            .input-container {
+                font-size: 0.4rem;
+                margin-bottom: 8px;
+                padding: 2px 5px;
+            }
+            input {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="number">Chat on Whatspp:</label>
+        <div class="input-container">
+            <input type="text" placeholder="Enter the number" name="number" id="number">
+            <i class="fas fa-times"></i>
+        </div>
+        <button id="button">Chat now</button>
+    </div>
+    <script>
+        let button = document.getElementById("button");
+        button.addEventListener("click", () => {
+            let value = document.getElementById("number").value;
+            let url = "http://wa.me/91" + value;
+            window.location = url;
+        })
+        let close = document.querySelector("i.fa-times");
+        close.addEventListener("click", () => {
+            document.getElementById("number").value = null;
+        })
+    </script>
+</body>
+</html>
